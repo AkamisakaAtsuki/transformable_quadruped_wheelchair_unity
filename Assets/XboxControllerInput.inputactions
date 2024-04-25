@@ -1,0 +1,52 @@
+{
+    "name": "XboxControllerInput",
+    "maps": [
+        {
+            "name": "QuadrupedControl",
+            "id": "a7711a6c-4e6c-440d-ad8d-b371aa7c3fce",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "dc2283e6-4d8b-4858-b394-26fc287af20f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "6cd20e4b-3995-4e1f-b50b-db56ec88b620",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ce7c701e-4771-4d64-8090-d60564d944df",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02007f2b-3885-4dfa-8bb3-1e4cb0ce540f",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
