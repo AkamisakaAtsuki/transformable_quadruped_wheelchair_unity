@@ -5,7 +5,7 @@
 Current wheelchairs, relying on wheels for movement, struggle with uneven terrains and steps. This project focuses on the integration of a four-legged robot and a wheelchair to create the Transformable Quadruped Wheelchair, designed to ascend and descend stairs easily even with a rider on board. This is achieved using reinforcement learning, marking a rare experiment that, if successful, could significantly enhance mobility freedom for many. As an initial step, this study experimented with mounting a Tesla Bot 3D model in place of a human on the Transformable Quadruped Wheelchair, to acquire the movements of ascending and descending straight stairs. The code used in these experiments is shared in this repository.
 
 ## Rider Information
-The 3D model of the Tesla Bot used as a rider can be installed from this page: Tesla Bot 3D Model. Currently, it seems that it can no longer be installed from this site but is available for purchase on other websites. When experimenting, it is necessary to install it and adjust the joint angles properly to position it in a sitting posture.
+The 3D model of the Tesla Bot used as a rider can be installed from this page: [Tesla Bot 3D Model](https://sketchfab.com/3d-models/tesla-bot-fbx-627f9141da354a97acc7835c458df8f8). Currently, it seems that it can no longer be installed from this site but is available for purchase on other websites. When experimenting, it is necessary to install it and adjust the joint angles properly to position it in a sitting posture.
 
 ## How to Use
 When using the system, switch between learning the action of climbing up or descending stairs, then proceed with the training using the PPO algorithm from ML-Agents.
@@ -53,7 +53,7 @@ behaviors:
 ```
 
 ## Acknowledgements
-Most of the programming for this study was done by me, however, for Lidar.cs, I utilized the program once published by VTC on Unity, which can be found here: VTC on Unity. I express my gratitude.
+Most of the programming for this study was done by me, however, for Lidar.cs, I utilized the program once published by VTC on Unity, which can be found here: [VTC on Unity](https://github.com/Field-Robotics-Japan/vtc_unity). I express my gratitude.
 
 ## License
 Apache License
