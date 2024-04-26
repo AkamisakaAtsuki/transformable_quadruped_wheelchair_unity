@@ -40,8 +40,13 @@ behaviors:
 
 ### Ascending Action
 For ascending, in the QuadrupedAgents script attached to the Scripts object, set ○○ to △ and ◇ to □.
+![image](https://github.com/AkamisakaAtsuki/transformable_quadruped_wheelchair_unity/blob/main/Assets/Images/stair-ascend.png)
+
+
 ### Descending Action
 For descending, in the QuadrupedAgents script attached to the Scripts object, set ○○ to △ and ◇ to □.
+![image](https://github.com/AkamisakaAtsuki/transformable_quadruped_wheelchair_unity/blob/main/Assets/Images/stair-descend.png)
+
 ### Executing Training
 For training, save the config as ○○ and execute the training.
 ## Experiment Details
