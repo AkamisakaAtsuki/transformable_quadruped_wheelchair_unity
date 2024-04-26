@@ -10,6 +10,34 @@ The 3D model of the Tesla Bot used as a rider can be installed from this page: T
 ## How to Use
 When using the system, switch between learning the action of climbing up or descending stairs, then proceed with the training using the PPO algorithm from ML-Agents.
 
+``` transformable-quadruped-wheelchair.yaml
+behaviors:
+  TransformableQuadrupedWheelchair:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 1024
+      buffer_size: 100000
+      learning_rate: 0.0003
+      beta: 0.001
+      epsilon: 0.2
+      lambd: 0.99
+      num_epoch: 3
+      learning_rate_schedule: linear
+    network_settings:
+      normalize: true
+      hidden_units: 2048
+      num_layers: 5
+      vis_encode_type: simple
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    keep_checkpoints: 5
+    max_steps: 100000000
+    time_horizon: 2000
+    summary_freq: 12000
+```
+
 ### Ascending Action
 For ascending, in the QuadrupedAgents script attached to the Scripts object, set ○○ to △ and ◇ to □.
 ### Descending Action
