@@ -10,7 +10,21 @@ The 3D model of the Tesla Bot used as a rider can be installed from this page: T
 ## How to Use
 When using the system, switch between learning the action of climbing up or descending stairs, then proceed with the training using the PPO algorithm from ML-Agents.
 
-``` transformable-quadruped-wheelchair.yaml
+### Ascending Action
+For ascending, in the QuadrupedAgents script attached to the Scripts object, set Joy Mode to Autonomous, Wheel Chair Mode to Up Stair, and EnvType to Linear Stair Climbing With Passenger.
+
+![image](https://github.com/AkamisakaAtsuki/transformable_quadruped_wheelchair_unity/blob/main/Assets/Images/stair-ascend.png)
+
+
+### Descending Action
+For descending, in the QuadrupedAgents script attached to the Scripts object, set Joy Mode to Autonomous, Wheel Chair Mode to Down Stair, and EnvType to Linear Stair Descending With Passenger.
+
+![image](https://github.com/AkamisakaAtsuki/transformable_quadruped_wheelchair_unity/blob/main/Assets/Images/stair-descend.png)
+
+### Executing Training
+For training, save the config as transformable-quadruped-wheelchair.yaml and execute the training.
+
+``` 
 behaviors:
   TransformableQuadrupedWheelchair:
     trainer_type: ppo
@@ -37,26 +51,6 @@ behaviors:
     time_horizon: 2000
     summary_freq: 12000
 ```
-
-### Ascending Action
-For ascending, in the QuadrupedAgents script attached to the Scripts object, set Joy Mode to Autonomous, Wheel Chair Mode to Up Stair, and EnvType to Linear Stair Climbing With Passenger.
-
-![image](https://github.com/AkamisakaAtsuki/transformable_quadruped_wheelchair_unity/blob/main/Assets/Images/stair-ascend.png)
-
-
-### Descending Action
-For descending, in the QuadrupedAgents script attached to the Scripts object, set Joy Mode to Autonomous, Wheel Chair Mode to Down Stair, and EnvType to Linear Stair Descending With Passenger.
-
-![image](https://github.com/AkamisakaAtsuki/transformable_quadruped_wheelchair_unity/blob/main/Assets/Images/stair-descend.png)
-
-### Executing Training
-For training, save the config as ○○ and execute the training.
-
-## Experiment Details
-Results are presented as follows:
-
-### Ascending Experiment: Procedure, Data Used, Evaluation Criteria.
-### Descending Experiment: Procedure, Data Used, Evaluation Criteria.
 
 ## Acknowledgements
 Most of the programming for this study was done by me, however, for Lidar.cs, I utilized the program once published by VTC on Unity, which can be found here: VTC on Unity. I express my gratitude.
